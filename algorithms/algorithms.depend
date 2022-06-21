@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1655810871 source:d:\repo\algorithms\main.cpp
+	<iostream>
+	"utils/utils.h"
+	"sorts/sorts.h"
+
+1655793253 d:\repo\algorithms\utils\utils.h
+	"swap.h"
+	"arraylen.h"
+
+1655792829 d:\repo\algorithms\utils\swap.h
+
+1655810953 d:\repo\algorithms\utils\arraylen.h
+	<array>
+
+1655793032 d:\repo\algorithms\sorts\sorts.h
+	"quicksort.h"
+
+1655810644 d:\repo\algorithms\sorts\quicksort.h
+
