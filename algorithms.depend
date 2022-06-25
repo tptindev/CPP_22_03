@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1656176543 source:d:\projects\cpp\algorithms\main.cpp
+	<iostream>
+	<math.h>
+	<map>
+	<vector>
+	<bits/stdc++.h>
+	"utils/utils.h"
+	"sorts/sorts.h"
+	"leetcode/leetcode.h"
+
+1656176469 d:\projects\cpp\algorithms\utils\utils.h
+	<string>
+	"swap.h"
+	"int_to_array.h"
+
+1656169063 d:\projects\cpp\algorithms\utils\swap.h
+
+1656082619 d:\projects\cpp\algorithms\sorts\sorts.h
+	"bubble_sort.h"
+	"quick_sort.h"
+
+1656085142 d:\projects\cpp\algorithms\sorts\bubble_sort.h
+
+1656085233 d:\projects\cpp\algorithms\sorts\quick_sort.h
+
+1656171846 d:\projects\cpp\algorithms\leetcode\leetcode.h
+	"int_to_roman.h"
+	"longest_palindromic_substring.h"
+
+1656176366 d:\projects\cpp\algorithms\leetcode\int_to_roman.h
+
+1656154189 d:\projects\cpp\algorithms\utils\int_to_array.h
+
+1656177392 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
+
