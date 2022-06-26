@@ -1,22 +1,24 @@
 # depslib dependency file v1.0
-1656176543 source:d:\projects\cpp\algorithms\main.cpp
+1656238100 source:d:\projects\cpp\algorithms\main.cpp
 	<iostream>
 	<math.h>
 	<map>
 	<vector>
+	<algorithm>
 	<bits/stdc++.h>
 	"utils/utils.h"
 	"sorts/sorts.h"
 	"leetcode/leetcode.h"
 
-1656176469 d:\projects\cpp\algorithms\utils\utils.h
+1656234196 d:\projects\cpp\algorithms\utils\utils.h
 	<string>
 	"swap.h"
 	"int_to_array.h"
+	"minmax.h"
 
 1656169063 d:\projects\cpp\algorithms\utils\swap.h
 
-1656082619 d:\projects\cpp\algorithms\sorts\sorts.h
+1656219912 d:\projects\cpp\algorithms\sorts\sorts.h
 	"bubble_sort.h"
 	"quick_sort.h"
 
@@ -28,9 +30,11 @@
 	"int_to_roman.h"
 	"longest_palindromic_substring.h"
 
-1656176366 d:\projects\cpp\algorithms\leetcode\int_to_roman.h
+1656205396 d:\projects\cpp\algorithms\leetcode\int_to_roman.h
 
-1656154189 d:\projects\cpp\algorithms\utils\int_to_array.h
+1656205978 d:\projects\cpp\algorithms\utils\int_to_array.h
 
-1656177392 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
+1656238113 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
+
+1656238086 d:\projects\cpp\algorithms\utils\minmax.h
 

@@ -2,6 +2,7 @@
 #include <string>
 #include "swap.h"
 #include "int_to_array.h"
+#include "minmax.h"
 
 std::map<char, int> countDupsInStr(std::string str)
 {

@@ -11,3 +11,12 @@ void printArr(T arr[], int len)
         std::cout << arr[i] << ",";
     }
 }
+
+template<typename T>
+void printVec(std::vector<T> arr)
+{
+    for(T i:arr)
+    {
+        std::cout << i << ",";
+    }
+}

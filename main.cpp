@@ -2,6 +2,7 @@
 #include<math.h>
 #include<map>
 #include<vector>
+#include <algorithm>
 #include <bits/stdc++.h>
 #include "utils/utils.h"
 #include "sorts/sorts.h"
@@ -14,7 +15,7 @@ int main()
 //    bubbleSort<float>(arr, len);
 //    quickSort<float>(arr, 0, len - 1);
 //    printArr(arr, len);
-//    intToRoman(1994);
-    std::cout << longest_palindromic_substring("abcdcbe");
+//    intToRoman(1975);
+    std::cout << longest_palindromic_substring("abbebbfcedec");
     return 0;
 }
