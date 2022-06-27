@@ -9,16 +9,19 @@ std::string longest_palindromic_substring(std::string s)
     else
     {
         int L = 0;
-        int R = 1;
-        int M = L;
+        int M = 1;
+        int R = M > len? M + 1 : M;
+
         while(R < len)
         {
             std::string k = "";
-            if(s[L] == s[R])
-                k = std::string(1, s[L]) + std::string(1, s[M]) + std::string(1,s[R]);
-            else if(s[L] == s[M] && M > 0)
+            if(M == R)
+                k = std::string(1, s[L]) + std::string(1, s[R]);
+            else if(s[L] == s[R])
+                k = std::string(1, s[L]) + std::string(1, s[M]) + std::string(1, s[R]);
+            else if(s[L] == s[M])
                 k = std::string(1, s[L]) + std::string(1, s[M]);
-            else if(s[R] == s[M] && M > 0)
+            else if(s[R] == s[M])
                 k = std::string(1, s[M]) + std::string(1, s[R]);
             if(k != "")
                 table[k] = L;
@@ -32,24 +35,19 @@ std::string longest_palindromic_substring(std::string s)
 
         for(auto it:table)
         {
-            int len_ = it.first.length();
+            int lenW = it.first.length();
             int l = it.second;
-            int r = l + len_ - 1;
+            int m = lenW / 2;
+            int r = l + lenW - 1;
             std::string newStr = it.first;
             std::cout << "Sub String: " << it.first << " LEFT:" << l << " RIGHT:" << r << std::endl;
             while(l > 0 && r < len)
             {
                 --l;
                 ++r;
-//                std::cout << s[l] << s[r] << std::endl;
-                if(it.first.length() == 2)
+                newStr =  s[l] + newStr + s[r];
+                if(s[l] == s[r])
                 {
-                    tmp.push_back(it.first);
-                }
-                else if(s[l] == s[r])
-                {
-                    newStr =  s[l] + newStr + s[r];
-                    std::cout << newStr << std::endl;
                     tmp.push_back(newStr);
                 }
                 else

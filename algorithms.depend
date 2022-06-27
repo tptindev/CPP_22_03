@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1656242381 source:d:\projects\cpp\algorithms\main.cpp
+1656338446 source:d:\projects\cpp\algorithms\main.cpp
 	<iostream>
 	<math.h>
 	<map>
@@ -34,7 +34,7 @@
 
 1656205978 d:\projects\cpp\algorithms\utils\int_to_array.h
 
-1656245607 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
+1656338666 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
 
 1656239916 d:\projects\cpp\algorithms\utils\minmax.h
 
