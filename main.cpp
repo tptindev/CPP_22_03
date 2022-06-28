@@ -10,12 +10,12 @@
 
 int main()
 {
-//    float arr[11] = {39, 81,7, 1011, 55, 289, 12, 34, 68, 32, 20};
-//    int len = sizeof(arr)/sizeof(arr[0]);
-//    bubbleSort<float>(arr, len);
-//    quickSort<float>(arr, 0, len - 1);
-//    printArr(arr, len);
-//    intToRoman(1975);
-    std::cout << longest_palindromic_substring("aabaaaaaabbeaa");
+//float arr[11] = {39, 81,7, 1011, 55, 289, 12, 34, 68, 32, 20};
+//int len = sizeof(arr)/sizeof(arr[0]);
+//bubbleSort<float>(arr, len);
+//quickSort<float>(arr, 0, len - 1);
+//printArr(arr, len);
+//intToRoman(1975);
+    std::cout << longest_palindromic_substring("abfbaabbggggggg");
     return 0;
 }

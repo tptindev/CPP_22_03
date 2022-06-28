@@ -5,28 +5,30 @@ std::string longest_palindromic_substring(std::string s)
     std::vector<std::string> tmp;
     std::map<std::string, int> table;
     int len = s.length();
-    if(len == 1)return s;
+    if(len == 1) return s;
     else
     {
         int L = 0;
-        int M = 1;
-        int R = M > len? M + 1 : M;
+        int M = L;
+        int R = 1;
 
         while(R < len)
         {
-            std::string k = "";
+            std::string k;
             if(M == R)
                 k = std::string(1, s[L]) + std::string(1, s[R]);
             else if(s[L] == s[R])
                 k = std::string(1, s[L]) + std::string(1, s[M]) + std::string(1, s[R]);
-            else if(s[L] == s[M])
+            else if(s[L] == s[M] && M > L)
                 k = std::string(1, s[L]) + std::string(1, s[M]);
-            else if(s[R] == s[M])
-                k = std::string(1, s[M]) + std::string(1, s[R]);
-            if(k != "")
-                table[k] = L;
+            else if(s[R] == s[M] && M > L)
+                k = std::string(1, s[R]) + std::string(1, s[M]);
 
-            tmp.push_back(k);
+            if(k != "")
+            {
+                table[k] = L;
+                tmp.push_back(k);
+            }
 
             L = M;
             M = R;
@@ -37,7 +39,6 @@ std::string longest_palindromic_substring(std::string s)
         {
             int lenW = it.first.length();
             int l = it.second;
-            int m = lenW / 2;
             int r = l + lenW - 1;
             std::string newStr = it.first;
             std::cout << "Sub String: " << it.first << " LEFT:" << l << " RIGHT:" << r << std::endl;
@@ -45,12 +46,16 @@ std::string longest_palindromic_substring(std::string s)
             {
                 --l;
                 ++r;
-                newStr =  s[l] + newStr + s[r];
+                if(it.first.length() == 2)
+                {
+                    tmp.push_back(it.first);
+                }
                 if(s[l] == s[r])
                 {
+                    newStr =  s[l] + newStr + s[r];
                     tmp.push_back(newStr);
                 }
-                else
+                if(s[l] != s[r])
                     break;
             }
         }
