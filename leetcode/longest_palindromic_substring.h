@@ -29,33 +29,32 @@ std::string longest_palindromic_substring(std::string s)
                 table[k] = L;
                 tmp.push_back(k);
             }
-
             L = M;
             M = R;
             R++;
         }
-
+        printVec(tmp);
         for(auto it:table)
         {
             int lenW = it.first.length();
             int l = it.second;
             int r = l + lenW - 1;
             std::string newStr = it.first;
-            std::cout << "Sub String: " << it.first << " LEFT:" << l << " RIGHT:" << r << std::endl;
+            std::cout << "\nSub String: " << it.first << " LEFT:" << l << " RIGHT:" << r << " LEN:" << len << std::endl;
+            if(it.first.length() == 2)
+            {
+                tmp.push_back(it.first);
+            }
             while(l > 0 && r < len)
             {
                 --l;
                 ++r;
-                if(it.first.length() == 2)
-                {
-                    tmp.push_back(it.first);
-                }
                 if(s[l] == s[r])
                 {
                     newStr =  s[l] + newStr + s[r];
                     tmp.push_back(newStr);
                 }
-                if(s[l] != s[r])
+                else
                     break;
             }
         }

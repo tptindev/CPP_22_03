@@ -16,6 +16,6 @@ int main()
 //quickSort<float>(arr, 0, len - 1);
 //printArr(arr, len);
 //intToRoman(1975);
-    std::cout << longest_palindromic_substring("abfbaabbggggggg");
+    std::cout << longest_palindromic_substring("abba");
     return 0;
 }
