@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1656456091 source:d:\projects\cpp\algorithms\main.cpp
+1656565393 source:d:\projects\cpp\algorithms\main.cpp
 	<iostream>
+	<ostream>
 	<math.h>
 	<map>
 	<vector>
@@ -9,6 +10,7 @@
 	"utils/utils.h"
 	"sorts/sorts.h"
 	"leetcode/leetcode.h"
+	"matrix/Matrix2D.h"
 
 1656234196 d:\projects\cpp\algorithms\utils\utils.h
 	<string>
@@ -16,7 +18,7 @@
 	"int_to_array.h"
 	"minmax.h"
 
-1656169063 d:\projects\cpp\algorithms\utils\swap.h
+1656501675 d:\projects\cpp\algorithms\utils\swap.h
 
 1656219912 d:\projects\cpp\algorithms\sorts\sorts.h
 	"bubble_sort.h"
@@ -34,7 +36,15 @@
 
 1656205978 d:\projects\cpp\algorithms\utils\int_to_array.h
 
-1656456169 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
+1656524179 d:\projects\cpp\algorithms\leetcode\longest_palindromic_substring.h
 
 1656239916 d:\projects\cpp\algorithms\utils\minmax.h
+
+1656565652 source:d:\projects\cpp\algorithms\matrix\matrix2d.cpp
+	"Matrix2D.h"
+	<iostream>
+
+1656565429 d:\projects\cpp\algorithms\matrix\matrix2d.h
+	<vector>
+	<ostream>
 
