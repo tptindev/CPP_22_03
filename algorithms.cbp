@@ -35,6 +35,8 @@
 		<Unit filename="leetcode/leetcode.h" />
 		<Unit filename="leetcode/longest_palindromic_substring.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="matrix/Matrix2D.cpp" />
+		<Unit filename="matrix/Matrix2D.h" />
 		<Unit filename="sorts/bubble_sort.h" />
 		<Unit filename="sorts/insertion_sort.h" />
 		<Unit filename="sorts/quick_sort.h" />
