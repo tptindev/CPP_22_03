@@ -19,6 +19,14 @@ int main()
     Matrix2D matrix3(b);
     matrix = (matrix2 + matrix3);
     std::cout << matrix.m_matrix.size() << std::endl;
+    // std::string s = "";
+    // while (true)
+    // {
+    //     std::cout << "Enter string: ";
+    //     std::cin >> s;
+    //     std::cout << longest_palindromic_substring(s);
+    //     std::cout << "\n";
+    // }
 
     return 0;
 }

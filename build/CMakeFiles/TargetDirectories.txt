@@ -1,3 +1,5 @@
+D:/projects/cpp/algorithms/build/CMakeFiles/package.dir
 D:/projects/cpp/algorithms/build/CMakeFiles/algorithms.dir
+D:/projects/cpp/algorithms/build/CMakeFiles/package_source.dir
 D:/projects/cpp/algorithms/build/CMakeFiles/edit_cache.dir
 D:/projects/cpp/algorithms/build/CMakeFiles/rebuild_cache.dir

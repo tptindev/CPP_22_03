@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/projects/cpp/algorithms/main.cpp" "CMakeFiles/algorithms.dir/main.cpp.obj" "gcc" "CMakeFiles/algorithms.dir/main.cpp.obj.d"
+  "D:/projects/cpp/algorithms/src/matrix/Matrix2D.cpp" "CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj" "gcc" "CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj.d"
   )
 
 # Targets to which this target links.
