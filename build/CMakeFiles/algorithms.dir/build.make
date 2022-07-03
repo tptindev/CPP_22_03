@@ -73,30 +73,30 @@ CMakeFiles/algorithms.dir/main.cpp.obj: CMakeFiles/algorithms.dir/includes_CXX.r
 CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/algorithms.dir/main.cpp.obj: CMakeFiles/algorithms.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\projects\cpp\algorithms\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithms.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithms.dir/main.cpp.obj -MF CMakeFiles\algorithms.dir\main.cpp.obj.d -o CMakeFiles\algorithms.dir\main.cpp.obj -c D:\projects\cpp\algorithms\main.cpp
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithms.dir/main.cpp.obj -MF CMakeFiles\algorithms.dir\main.cpp.obj.d -o CMakeFiles\algorithms.dir\main.cpp.obj -c D:\projects\cpp\algorithms\main.cpp
 
 CMakeFiles/algorithms.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\cpp\algorithms\main.cpp > CMakeFiles\algorithms.dir\main.cpp.i
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\cpp\algorithms\main.cpp > CMakeFiles\algorithms.dir\main.cpp.i
 
 CMakeFiles/algorithms.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\cpp\algorithms\main.cpp -o CMakeFiles\algorithms.dir\main.cpp.s
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\cpp\algorithms\main.cpp -o CMakeFiles\algorithms.dir\main.cpp.s
 
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj: CMakeFiles/algorithms.dir/flags.make
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj: CMakeFiles/algorithms.dir/includes_CXX.rsp
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj: ../src/matrix/Matrix2D.cpp
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj: CMakeFiles/algorithms.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\projects\cpp\algorithms\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj -MF CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.obj.d -o CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.obj -c D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj -MF CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.obj.d -o CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.obj -c D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp
 
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.i"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp > CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.i
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp > CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.i
 
 CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.s"
-	C:\PROGRA~1\MINGW-~1\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp -o CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.s
+	C:\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\cpp\algorithms\src\matrix\Matrix2D.cpp -o CMakeFiles\algorithms.dir\src\matrix\Matrix2D.cpp.s
 
 # Object files for target algorithms
 algorithms_OBJECTS = \

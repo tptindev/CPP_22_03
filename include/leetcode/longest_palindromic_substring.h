@@ -2,24 +2,43 @@
 
 std::string longest_palindromic_substring(std::string s)
 {
-    int len = s.length();
-    if (len == 1)
-        return s;
-    else if (len == 2)
-        return (s[0] == s[1] ? s : std::string(1, s[0]));
-    else
+    int len = s.size();
+    bool table[len][len];
+
+    memset(table, 0, sizeof(table));
+
+    int begin = 0;
+    int finish = 1;
+
+    // fill 1 for substrings of length 1
+    for (int i = 0; i < len; ++i)
+        table[i][i] = 1;
+
+    // fill 1 for substrings of length 2
+    for (int i = 0; i < len - 1; i++)
     {
-        int L = 0;
-        int R = 1;
-        while (L >= 0 && R < len)
+        if (s[i] == s[i + 1])
         {
-            if (s[L] == s[R])
-            {
-            }
-            std::cout << "Left: " << L << ", Right: " << R << std::endl;
-            L = R;
-            R++;
+            table[i][i + 1] = 1;
+            begin = i;
+            finish = 2;
         }
-        return s.substr(L, R);
     }
+
+    // Check for lengths greater than 2
+    for (int i = 2; i < len; i++)
+    {
+        for (int j = 0; j < len - i; j++)
+        {
+            int l = j;
+            int r = i + j;
+            if (table[l + 1][r - 1] == 1 && s[l] == s[r])
+            {
+                table[l][r] = 1;
+                begin = j;
+                finish = i + 1;
+            }
+        }
+    }
+    return s.substr(begin, finish);
 }
