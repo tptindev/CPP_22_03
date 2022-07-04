@@ -25,3 +25,22 @@ Matrix2D &Matrix2D::operator+(const Matrix2D &A)
     }
     return *this;
 }
+
+Matrix2D &Matrix2D::operator*(const Matrix2D &A)
+{
+    std::vector<std::vector<int>> multi(m_matrix.size(), std::vector<int>(A.m_matrix.size(), 0));
+
+    for (int i = 0; i < m_matrix.size(); i++)
+    {
+        for (int j = 0; j < m_matrix[i].size(); j++)
+        {
+            for (int k = 0; k < A.m_matrix[0].size(); k++)
+            {
+                multi[i][j] += m_matrix[i][k] * A.m_matrix[k][j];
+            }
+        }
+        std::cout << "\n";
+    }
+    m_matrix = multi;
+    return *this;
+}
