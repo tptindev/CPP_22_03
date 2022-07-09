@@ -2,13 +2,23 @@
 #include <vector>
 #include <ostream>
 #include <iostream>
+#include <thread>
+#include <time.h>
+// template <typename T>
 class Matrix2D
 {
 private:
+    int *m_matrix;
+    int m_Rows = 3;
+    int m_Cols = 3;
+
 public:
-    std::vector<std::vector<int>> m_matrix;
     Matrix2D();
-    Matrix2D(std::vector<std::vector<int>> p_matrix);
+    Matrix2D(int p_Rows, int p_Cols);
+    Matrix2D(int *p_matrix);
+    int *matrixZero(int p_Rows, int p_Cols);
+    int *randomMatrix();
+    void printMatrix();
     Matrix2D &operator=(const Matrix2D &A);
     Matrix2D &operator+(const Matrix2D &A);
     Matrix2D &operator*(const Matrix2D &A);

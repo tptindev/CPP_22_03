@@ -14,12 +14,13 @@
 
 int main()
 {
-    // std::vector<std::vector<char>> board = {
-    //     {'A', 'K', 'J', 'T', 'F'},
-    //     {'R', 'I', 'A', 'B', 'G'},
-    //     {'D', 'C', 'B', 'Q', 'O'},
-    //     {'C', 'D', 'V', 'C', 'F'},
-    // };
-    // exist(board, "ABCD");
+    Matrix2D matrix(2, 3);
+    Matrix2D matrix2(3, 2);
+    matrix.randomMatrix();
+    matrix2.randomMatrix();
+    matrix.printMatrix();
+    matrix2.printMatrix();
+    matrix = matrix * matrix2;
+    matrix.printMatrix();
     return 0;
 }
