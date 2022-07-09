@@ -17,12 +17,12 @@ Matrix2D::Matrix2D(int *p_matrix)
 
 int *Matrix2D::matrixZero(int p_Rows, int p_Cols)
 {
-    m_matrix = new int[(p_Rows * p_Cols)];
+    int *mt = new int[(p_Rows * p_Cols)];
     for (int i = 0; i < p_Rows * p_Cols; i++)
     {
-        m_matrix[i] = 0;
+        mt[i] = 0;
     }
-    return m_matrix;
+    return mt;
 }
 
 int *Matrix2D::randomMatrix()
@@ -70,14 +70,13 @@ Matrix2D &Matrix2D::operator+(const Matrix2D &A)
 
 Matrix2D &Matrix2D::operator*(const Matrix2D &A)
 {
-    Matrix2D tmp;
-    int *multi = tmp.matrixZero(m_Rows, A.m_Cols);
+    int *multi = matrixZero(m_Rows, A.m_Cols);
 
-    for (int i = 0; i < m_Rows; i++)
+    for (int i = 0; i < m_Rows; ++i)
     {
-        for (int j = 0; j < m_Cols; j++)
+        for (int j = 0; j < A.m_Cols; ++j)
         {
-            for (int k = 0; k < A.m_Cols; k++)
+            for (int k = 0; k < m_Cols; ++k)
             {
                 //  multi[i][j] += m_matrix[i][k] * A.m_matrix[k][j]
                 *(multi + i * m_Cols + j) += *(m_matrix + i * m_Cols + k) * *(A.m_matrix + k * A.m_Cols + j);
