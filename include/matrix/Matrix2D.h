@@ -2,9 +2,9 @@
 #include <vector>
 #include <ostream>
 #include <iostream>
-#include <thread>
 #include <time.h>
-// template <typename T>
+#include <thread>
+#include <functional>
 class Matrix2D
 {
 private:
@@ -18,7 +18,7 @@ public:
     Matrix2D(int *p_matrix);
     int *matrixZero(int p_Rows, int p_Cols);
     int *randomMatrix();
-    void printMatrix();
+    void printMatrix(int p_K);
     Matrix2D &operator=(const Matrix2D &A);
     Matrix2D &operator+(const Matrix2D &A);
     Matrix2D &operator*(const Matrix2D &A);
@@ -26,4 +26,9 @@ public:
     {
         return output;
     }
+
+    void f(int i, int j, Matrix2D A)
+    {
+        *(m_matrix + i * m_Cols + j) = *(m_matrix + i * m_Cols + j) + *(A.m_matrix + i * m_Cols + j);
+    };
 };

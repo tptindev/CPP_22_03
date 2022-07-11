@@ -27,18 +27,17 @@ int *Matrix2D::matrixZero(int p_Rows, int p_Cols)
 
 int *Matrix2D::randomMatrix()
 {
-    // Use current time as seed for random generator
-    srand((unsigned)time(0));
+
     for (int i = 0; i < m_Rows * m_Cols; i++)
     {
-        m_matrix[i] = rand() % 10;
+        m_matrix[i] = 1 + rand() % 10;
     }
     return m_matrix;
 }
 
-void Matrix2D::printMatrix()
+void Matrix2D::printMatrix(int p_K)
 {
-    std::cout << "---MATRIX---\n";
+    std::cout << "---MATRIX---" << p_K << std::endl;
     for (int i = 0; i < m_Rows; i++)
     {
         for (int j = 0; j < m_Cols; j++)
@@ -58,13 +57,19 @@ Matrix2D &Matrix2D::operator=(const Matrix2D &A)
 
 Matrix2D &Matrix2D::operator+(const Matrix2D &A)
 {
+    std::clock_t t;
+    t = clock();
+    std::thread *workers = new std::thread[m_Rows * m_Cols];
     for (int i = 0; i < m_Rows; i++)
     {
         for (int j = 0; j < m_Cols; j++)
         {
-            *(m_matrix + i * m_Cols + j) = *(m_matrix + i * m_Cols + j) + *(A.m_matrix + i * m_Cols + j);
+            workers[j] = std::thread(std::bind(&Matrix2D::f, this, i, j, A));
+            workers[j].join();
         }
     }
+    t = clock() - t;
+    std::cout << "It took time " << ((float)t) / CLOCKS_PER_SEC << std::endl;
     return *this;
 }
 

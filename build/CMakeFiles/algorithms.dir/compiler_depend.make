@@ -160,6 +160,16 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/bits/stl_heap.h \
   C:/mingw/include/c++/11.3.0/bits/stl_tempbuf.h \
   C:/mingw/include/c++/11.3.0/bits/uniform_int_dist.h \
+  C:/mingw/include/c++/11.3.0/thread \
+  C:/mingw/include/c++/11.3.0/bits/std_thread.h \
+  C:/mingw/include/c++/11.3.0/bits/refwrap.h \
+  C:/mingw/include/c++/11.3.0/bits/unique_ptr.h \
+  C:/mingw/include/c++/11.3.0/bits/this_thread_sleep.h \
+  C:/mingw/include/c++/11.3.0/chrono \
+  C:/mingw/include/c++/11.3.0/ratio \
+  C:/mingw/include/c++/11.3.0/limits \
+  C:/mingw/include/c++/11.3.0/ctime \
+  C:/mingw/include/c++/11.3.0/bits/parse_numbers.h \
   C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/stdc++.h \
   C:/mingw/include/c++/11.3.0/cassert \
   C:/mingw/x86_64-w64-mingw32/include/assert.h \
@@ -179,7 +189,6 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/cstring \
   C:/mingw/x86_64-w64-mingw32/include/string.h \
   C:/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  C:/mingw/include/c++/11.3.0/ctime \
   C:/mingw/include/c++/11.3.0/ccomplex \
   C:/mingw/include/c++/11.3.0/complex \
   C:/mingw/include/c++/11.3.0/sstream \
@@ -206,7 +215,6 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/mingw/include/c++/11.3.0/bits/fstream.tcc \
   C:/mingw/include/c++/11.3.0/functional \
-  C:/mingw/include/c++/11.3.0/bits/refwrap.h \
   C:/mingw/include/c++/11.3.0/bits/std_function.h \
   C:/mingw/include/c++/11.3.0/iomanip \
   C:/mingw/include/c++/11.3.0/locale \
@@ -215,10 +223,8 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/mingw/include/c++/11.3.0/bits/locale_facets_nonio.tcc \
   C:/mingw/include/c++/11.3.0/bits/locale_conv.h \
-  C:/mingw/include/c++/11.3.0/bits/unique_ptr.h \
   C:/mingw/include/c++/11.3.0/iterator \
   C:/mingw/include/c++/11.3.0/bits/stream_iterator.h \
-  C:/mingw/include/c++/11.3.0/limits \
   C:/mingw/include/c++/11.3.0/list \
   C:/mingw/include/c++/11.3.0/bits/stl_list.h \
   C:/mingw/include/c++/11.3.0/bits/allocated_ptr.h \
@@ -254,9 +260,6 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/bits/mask_array.h \
   C:/mingw/include/c++/11.3.0/bits/indirect_array.h \
   C:/mingw/include/c++/11.3.0/atomic \
-  C:/mingw/include/c++/11.3.0/chrono \
-  C:/mingw/include/c++/11.3.0/ratio \
-  C:/mingw/include/c++/11.3.0/bits/parse_numbers.h \
   C:/mingw/include/c++/11.3.0/codecvt \
   C:/mingw/include/c++/11.3.0/condition_variable \
   C:/mingw/include/c++/11.3.0/bits/std_mutex.h \
@@ -267,7 +270,6 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/future \
   C:/mingw/include/c++/11.3.0/mutex \
   C:/mingw/include/c++/11.3.0/bits/atomic_futex.h \
-  C:/mingw/include/c++/11.3.0/bits/std_thread.h \
   C:/mingw/include/c++/11.3.0/random \
   C:/mingw/include/c++/11.3.0/bits/random.h \
   C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/opt_random.h \
@@ -286,8 +288,6 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   C:/mingw/include/c++/11.3.0/bits/regex_executor.h \
   C:/mingw/include/c++/11.3.0/bits/regex_executor.tcc \
   C:/mingw/include/c++/11.3.0/scoped_allocator \
-  C:/mingw/include/c++/11.3.0/thread \
-  C:/mingw/include/c++/11.3.0/bits/this_thread_sleep.h \
   C:/mingw/include/c++/11.3.0/typeindex \
   C:/mingw/include/c++/11.3.0/unordered_map \
   C:/mingw/include/c++/11.3.0/bits/hashtable.h \
@@ -307,6 +307,7 @@ CMakeFiles/algorithms.dir/main.cpp.obj: ../main.cpp \
   ../include/leetcode/int_to_roman.h \
   ../include/leetcode/longest_palindromic_substring.h \
   ../include/leetcode/search_word.h \
+  ../include/leetcode/search_wordv2.h \
   ../include/recursion/recursion.h \
   ../include/recursion/factorial.h \
   ../include/recursion/fibonacci.h \
@@ -466,7 +467,9 @@ CMakeFiles/algorithms.dir/src/matrix/Matrix2D.cpp.obj: ../src/matrix/Matrix2D.cp
   C:/mingw/include/c++/11.3.0/ratio \
   C:/mingw/include/c++/11.3.0/limits \
   C:/mingw/include/c++/11.3.0/ctime \
-  C:/mingw/include/c++/11.3.0/bits/parse_numbers.h
+  C:/mingw/include/c++/11.3.0/bits/parse_numbers.h \
+  C:/mingw/include/c++/11.3.0/functional \
+  C:/mingw/include/c++/11.3.0/bits/std_function.h
 
 
 C:/mingw/x86_64-w64-mingw32/include/process.h:
@@ -863,6 +866,24 @@ C:/mingw/include/c++/11.3.0/bits/stl_tempbuf.h:
 
 C:/mingw/include/c++/11.3.0/bits/uniform_int_dist.h:
 
+C:/mingw/include/c++/11.3.0/thread:
+
+C:/mingw/include/c++/11.3.0/bits/std_thread.h:
+
+C:/mingw/include/c++/11.3.0/bits/stl_raw_storage_iter.h:
+
+C:/mingw/include/c++/11.3.0/bits/refwrap.h:
+
+C:/mingw/include/c++/11.3.0/bits/this_thread_sleep.h:
+
+C:/mingw/include/c++/11.3.0/chrono:
+
+C:/mingw/include/c++/11.3.0/ratio:
+
+C:/mingw/include/c++/11.3.0/limits:
+
+C:/mingw/include/c++/11.3.0/ctime:
+
 C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/stdc++.h:
 
 C:/mingw/include/c++/11.3.0/cassert:
@@ -896,8 +917,6 @@ C:/mingw/include/c++/11.3.0/cstddef:
 C:/mingw/include/c++/11.3.0/cstring:
 
 C:/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h:
-
-C:/mingw/include/c++/11.3.0/ctime:
 
 C:/mingw/include/c++/11.3.0/ccomplex:
 
@@ -937,10 +956,6 @@ C:/mingw/include/c++/11.3.0/bits/fstream.tcc:
 
 C:/mingw/include/c++/11.3.0/functional:
 
-C:/mingw/include/c++/11.3.0/bits/stl_raw_storage_iter.h:
-
-C:/mingw/include/c++/11.3.0/bits/refwrap.h:
-
 C:/mingw/include/c++/11.3.0/unordered_map:
 
 C:/mingw/include/c++/11.3.0/bits/std_function.h:
@@ -958,8 +973,6 @@ C:/mingw/include/c++/11.3.0/x86_64-w64-mingw32/bits/messages_members.h:
 C:/mingw/include/c++/11.3.0/bits/locale_facets_nonio.tcc:
 
 C:/mingw/include/c++/11.3.0/iterator:
-
-C:/mingw/include/c++/11.3.0/limits:
 
 C:/mingw/include/c++/11.3.0/bits/stl_list.h:
 
@@ -1015,17 +1028,11 @@ C:/mingw/include/c++/11.3.0/bits/indirect_array.h:
 
 C:/mingw/include/c++/11.3.0/atomic:
 
-C:/mingw/include/c++/11.3.0/chrono:
-
-C:/mingw/include/c++/11.3.0/ratio:
-
 C:/mingw/include/c++/11.3.0/codecvt:
 
 C:/mingw/include/c++/11.3.0/condition_variable:
 
 C:/mingw/include/c++/11.3.0/future:
-
-C:/mingw/include/c++/11.3.0/bits/std_thread.h:
 
 C:/mingw/include/c++/11.3.0/bits/random.h:
 
@@ -1059,10 +1066,6 @@ C:/mingw/include/c++/11.3.0/bits/regex_executor.tcc:
 
 C:/mingw/include/c++/11.3.0/scoped_allocator:
 
-C:/mingw/include/c++/11.3.0/thread:
-
-C:/mingw/include/c++/11.3.0/bits/this_thread_sleep.h:
-
 C:/mingw/include/c++/11.3.0/typeindex:
 
 C:/mingw/include/c++/11.3.0/bits/hashtable.h:
@@ -1086,6 +1089,8 @@ C:/mingw/include/c++/11.3.0/unordered_set:
 ../include/leetcode/longest_palindromic_substring.h:
 
 ../include/leetcode/search_word.h:
+
+../include/leetcode/search_wordv2.h:
 
 ../include/recursion/factorial.h:
 

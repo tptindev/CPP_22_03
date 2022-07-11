@@ -5,7 +5,10 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <thread>
 #include <bits/stdc++.h>
+#include <mutex>
+
 #include "utils/utils.h"
 #include "sorts/sorts.h"
 #include "leetcode/leetcode.h"
@@ -14,13 +17,23 @@
 
 int main()
 {
-    Matrix2D matrix(2, 3);
-    Matrix2D matrix2(3, 2);
+    // Use current time as seed for random generator
+    srand((unsigned)time(0));
+
+    Matrix2D matrix(100, 100);
+    Matrix2D matrix2(100, 100);
     matrix.randomMatrix();
+    // matrix.printMatrix(1);
     matrix2.randomMatrix();
-    matrix.printMatrix();
-    matrix2.printMatrix();
-    matrix = matrix * matrix2;
-    matrix.printMatrix();
+    // matrix2.printMatrix(2);
+    matrix = matrix + matrix2;
+    // matrix.printMatrix(3);
+
+    // std::vector<std::vector<char>> board = {
+    //     {'a', 'j', 'b', 'c', 'f'},
+    //     {'k', 'c', 'A', 'd', 'A'},
+    //     {'A', 'b', 'g', 'u', 'i'},
+    // };
+    // std::cout << exist1(board, "Abcdef") << std::endl;
     return 0;
 }
