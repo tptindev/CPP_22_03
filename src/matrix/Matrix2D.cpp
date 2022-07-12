@@ -59,17 +59,35 @@ Matrix2D &Matrix2D::operator+(const Matrix2D &A)
 {
     std::clock_t t;
     t = clock();
-    std::thread *workers = new std::thread[m_Rows * m_Cols];
-    for (int i = 0; i < m_Rows; i++)
+
+    // for (int i = 0; i < m_Rows; i++)
+    // {
+    //     for (int j = 0; j < m_Cols; j++)
+    //     {
+    //         *(m_matrix + i * m_Cols + j) = *(m_matrix + i * m_Cols + j) + *(A.m_matrix + i * m_Cols + j);
+    //     }
+    // }
+    std::thread *workers = new std::thread[4];
+    int segments = (m_Rows * m_Cols) / 4;
+    for (int i = 0; i < 4; i++)
     {
-        for (int j = 0; j < m_Cols; j++)
+        int start = i * segments;
+        int end = segments + start;
+        if (i == 3)
         {
-            workers[j] = std::thread(std::bind(&Matrix2D::f, this, i, j, A));
-            workers[j].join();
+            end = (m_Rows * m_Cols);
         }
+        workers[i] = std::thread(std::bind(&Matrix2D::f, this, start, end, A));
     }
+
+    for (int i = 0; i < 4; i++)
+    {
+        workers[i].join();
+    }
+
     t = clock() - t;
     std::cout << "It took time " << ((float)t) / CLOCKS_PER_SEC << std::endl;
+    delete[] workers;
     return *this;
 }
 

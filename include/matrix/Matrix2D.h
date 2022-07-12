@@ -11,6 +11,13 @@ private:
     int *m_matrix;
     int m_Rows = 3;
     int m_Cols = 3;
+    void f(int i, int j, Matrix2D A)
+    {
+        for (; i < j; i++)
+        {
+            m_matrix[i] = m_matrix[i] + A.m_matrix[i];
+        }
+    };
 
 public:
     Matrix2D();
@@ -26,9 +33,4 @@ public:
     {
         return output;
     }
-
-    void f(int i, int j, Matrix2D A)
-    {
-        *(m_matrix + i * m_Cols + j) = *(m_matrix + i * m_Cols + j) + *(A.m_matrix + i * m_Cols + j);
-    };
 };

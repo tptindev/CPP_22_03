@@ -15,6 +15,9 @@ bool exist1(std::vector<std::vector<char>> &board, std::string word)
         {
             if (board[row][col] == word[0])
             {
+                int ch_Count = 1;
+
+                ch_Count++;
             }
         }
     }
