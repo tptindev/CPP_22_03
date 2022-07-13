@@ -5,13 +5,14 @@
 #include <time.h>
 #include <thread>
 #include <functional>
+#include <bits/stdc++.h>
 class Matrix2D
 {
 private:
     int *m_matrix;
     int m_Rows = 3;
     int m_Cols = 3;
-    void f(int i, int j, Matrix2D A)
+    void fAdd(int i, int j, Matrix2D A)
     {
         for (; i < j; i++)
         {
@@ -24,7 +25,8 @@ public:
     Matrix2D(int p_Rows, int p_Cols);
     Matrix2D(int *p_matrix);
     int *matrixZero(int p_Rows, int p_Cols);
-    int *randomMatrix();
+    int *randomMatrix(bool duplicated = true);
+    void sortMatrix(bool desc = false);
     void printMatrix(int p_K);
     Matrix2D &operator=(const Matrix2D &A);
     Matrix2D &operator+(const Matrix2D &A);

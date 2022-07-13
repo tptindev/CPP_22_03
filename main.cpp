@@ -20,14 +20,19 @@ int main()
     // Use current time as seed for random generator
     srand((unsigned)time(0));
 
-    Matrix2D matrix(5, 5);
-    Matrix2D matrix2(5, 5);
-    matrix.randomMatrix();
+    // Matrix2D matrix(5, 5);
+    // Matrix2D matrix2(5, 5);
+    // matrix.randomMatrix();
     // matrix.printMatrix(1);
-    matrix2.randomMatrix();
+    // matrix2.randomMatrix();
     // matrix2.printMatrix(2);
-    matrix = matrix + matrix2;
+    // matrix = matrix + matrix2;
     // matrix.printMatrix(3);
+
+    Matrix2D matrix(5, 5);
+    matrix.randomMatrix(false);
+    matrix.printMatrix(1);
+    matrix.sortMatrix();
 
     // std::vector<std::vector<char>> board = {
     //     {'a', 'j', 'b', 'c', 'f'},

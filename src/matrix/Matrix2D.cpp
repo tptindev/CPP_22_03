@@ -25,13 +25,29 @@ int *Matrix2D::matrixZero(int p_Rows, int p_Cols)
     return mt;
 }
 
-int *Matrix2D::randomMatrix()
+int *Matrix2D::randomMatrix(bool duplicated)
 {
-
-    for (int i = 0; i < m_Rows * m_Cols; i++)
+    if (duplicated)
     {
-        m_matrix[i] = 1 + rand() % 10;
+        for (int i = 0; i < m_Rows * m_Cols; i++)
+        {
+            m_matrix[i] = rand() % (m_Rows * m_Cols);
+        }
+        return m_matrix;
     }
+    int len = m_Rows * m_Cols;
+    for (int i = 0; i < len; i++)
+    {
+        m_matrix[i] = i + 1;
+    }
+
+    // To obtain a time-based seed
+    unsigned seed = 0;
+    // Shuffling our array
+    // std::shuffle(m_matrix, m_matrix + len,
+    //              std::default_random_engine(seed));
+    // Shuffling our array using random_shuffle
+    std::random_shuffle(m_matrix, m_matrix + len);
     return m_matrix;
 }
 
@@ -47,6 +63,10 @@ void Matrix2D::printMatrix(int p_K)
         std::cout << std::endl;
     }
     std::cout << "\n";
+}
+
+void Matrix2D::sortMatrix(bool desc)
+{
 }
 
 Matrix2D &Matrix2D::operator=(const Matrix2D &A)
@@ -77,7 +97,7 @@ Matrix2D &Matrix2D::operator+(const Matrix2D &A)
         {
             end = (m_Rows * m_Cols);
         }
-        workers[i] = std::thread(std::bind(&Matrix2D::f, this, start, end, A));
+        workers[i] = std::thread(std::bind(&Matrix2D::fAdd, this, start, end, A));
     }
 
     for (int i = 0; i < 4; i++)
